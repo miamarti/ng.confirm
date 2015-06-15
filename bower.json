@@ -1,0 +1,22 @@
+{
+  "name": "ng-confirm",
+  "description": "Confirm Factory",
+  "version": "1.0.1",
+  "keywords": [
+    "confirm",
+    "msn",
+    "js",
+    "front-end",
+    "web"
+  ],
+  "homepage": "https://github.com/miamarti/ng.confirm",
+  "main": "ng.confirm/ng.confirm.js",
+  "ignore": [
+    "/.*",
+    "**/.*",
+    "build",
+    "speed",
+    "test",
+    "*.md"
+  ]
+}
