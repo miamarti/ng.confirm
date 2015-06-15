@@ -5,8 +5,7 @@
  * */
 (function(window, document) {
     "use strict";
-    (angular.module('ng.confirm', [ 'ng' ])).factory('$confirm', ['$q', function ($q) {
-    'use strict';
+    (angular.module('ngConfirm', [ 'ng' ])).factory('$confirm', ['$q', function ($q) {
     
         var ConfirmFactory = function (elem) {
         		this.deferred = $q.defer();
