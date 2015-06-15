@@ -15,7 +15,7 @@ $ bower install ng.confirm --save
 ```
 angular.module('example', ["ngConfirm"]);
 
-angular.module('example').controller('MainCtrl', function ($scope, dribbbleService, $confirm) {
+angular.module('example').controller('MainCtrl', function ($scope, $confirm) {
   $scope.msnConfirm = new $confirm('#confirmModal');
   
   $scope.msnConfirm.get().then(function(elm){
