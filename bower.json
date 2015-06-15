@@ -10,7 +10,7 @@
     "web"
   ],
   "homepage": "https://github.com/miamarti/ng.confirm",
-  "main": "dist/ng.confirm.min.js",
+  "main": "dist/ng.confirm.js",
   "ignore": [
     "/.*",
     "**/.*",

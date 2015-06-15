@@ -6,13 +6,14 @@
 (function(window, document) {
     "use strict";
     (angular.module('ngConfirm', [ 'ng' ])).factory('$confirm', ['$q', function ($q) {
-    
+    		
         var ConfirmFactory = function (elem) {
-        		this.deferred = $q.defer();
         		this.elem = $(elem);
-        		
+				this.resolve = new Function();
+				this.reject = new Function();
+			
         		this.show = function(){
-        			$(elem).slideDown( "slow" );
+        			$(elem).fadeIn();
         		};
         		
         		this.hide = function(){
@@ -21,17 +22,21 @@
         		
         		this.set = function(value){
         			if(value){
-        				this.deferred.resolve(this.elem);
+        				this.resolve(this.elem);
         				this.hide();
         			} else {
-        				this.deferred.reject(this.elem);
+        				this.reject(this.elem);
         				this.hide();
         			}
         		};
-        		
-        		this.get = function(){
-        			return this.deferred.promise;
-        		};
+        				
+				this.then = function(callback){
+					this.resolve = callback;
+				};
+			
+				this.catch = function(callback){
+					this.reject = callback;
+				}
         };
         return ConfirmFactory;
     
