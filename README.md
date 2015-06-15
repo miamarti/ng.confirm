@@ -6,6 +6,11 @@ Angular ng.confirm
 $ bower install ng.confirm --save
 ```
 
+## HTML dependency
+```
+<script src="bower_components/ng.confirm/ng-confirm/ng.confirm.min.js"></script>
+```
+
 ## Module AngularJS include
 ```
 angular.module('example', ["ngConfirm"]);
