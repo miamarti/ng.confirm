@@ -18,10 +18,10 @@ angular.module('example', ["ngConfirm"]);
 angular.module('example').controller('MainCtrl', function ($scope, $confirm) {
 	$scope.msnConfirm = new $confirm('#confirmModal');
   
-	$scope.msnConfirm.get().then(function(elm){
+	$scope.msnConfirm.then(function(elm){
 		console.log('Yes!');
 	});
-	$scope.msnConfirm.get().catch(function(elm){
+	$scope.msnConfirm.catch(function(elm){
 		console.log('No!');
 	});
 
