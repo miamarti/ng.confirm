@@ -12,7 +12,7 @@
         		this.elem = $(elem);
         		
         		this.show = function(){
-        			$(elem).fadeIn();
+        			$(elem).slideDown( "slow" );
         		};
         		
         		this.hide = function(){
