@@ -18,8 +18,5 @@
     "speed",
     "test",
     "*.md"
-  ],
-  "dependencies": [
-    "jquery": "*"
   ]
 }
